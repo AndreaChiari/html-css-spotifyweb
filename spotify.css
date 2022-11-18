@@ -1,0 +1,63 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilities */
+
+
+/* main */
+
+.core{
+    min-height: 100vh;
+    background-color: red;
+    position: relative;
+}
+
+
+header{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: blue;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
+    padding-top: 112px;
+    padding-left: 65px;
+}
+
+.navbar-left{
+    height: 100%;
+    width: 67px;
+    z-index: 1;
+    background-color: greenyellow;
+    position: absolute;
+    left: 0;
+    bottom:0;
+
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+
+
+
+
