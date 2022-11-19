@@ -20,6 +20,9 @@
 .marginbottom15{
     margin-bottom: 15px;
 }
+.marginright20{
+    margin-right: 20px;
+}
 
 .margintop15{
     margin-top: 15px;
@@ -291,17 +294,19 @@ footer{
 }
 
 .actualbrano{
-    flex-basis: 25%;
+    width: calc(100% / 3);
     align-items: center;
+    margin: 0px 4px;
 }
 .riproduzione{
-   flex-basis: 50%;
-   flex-direction: column;
-    justify-content: center;
+    width: calc(100% / 3);
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    margin: 0px 47px;
 }
 .media-settings{
-    flex-basis: 25%;
+    width: calc(100% / 3);
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
@@ -331,7 +336,7 @@ footer{
 }
 .icon-actualbrano{
     flex-direction: column;
-    padding-left: 40px;
+    
 }
 
 .icon-actualbrano > .fa-regular {
@@ -341,20 +346,20 @@ footer{
 /* riproduzione */
 
 #play{
-    font-size: 40px;
+    font-size: 30px;
 }
 .playicons{
     display: flex;
-    gap: 30px;
+    gap: 24px;
     align-items: center;
 }
 .playicons > i{
     color: white;
-    font-size: 26px;
+    
 }
 
 .playbar{
-    margin-left: 38px;
+    align-items: center;
 }
 
 .playbar > p{
@@ -365,11 +370,11 @@ footer{
 }
 
 .musicbar{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: rgb(111,113,119);
     height: 4px;
-    width: 180px;
+    width: 120px;
     display: inline-block;
     border-radius: 10px 10px;
 }
@@ -384,10 +389,6 @@ footer{
     border-radius: 10px 10px;
 }
 
-.media-settings{
-    align-items: center;
-    justify-content: flex-end;
-}
 
 .media-settings > i{
     color: white;
@@ -497,6 +498,7 @@ li{
     margin-bottom: 10px;
     display: block;
 }
+
 /* rows img */
 
 .row-recently > div{
@@ -520,6 +522,12 @@ li{
     margin-right: 10px;
 }
 
+.playicons > i {
+    font-size: 25px;
+}
+#play {
+    font-size: 40px;
+}
 
 } 
 
@@ -560,7 +568,10 @@ li{
         width: calc(100% / 5 - 9px);    
     }
     
-    
+/* footer */
+    .musicbar{
+        width: 450px;
+    }
 }
         
 /* width1200 */
