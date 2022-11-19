@@ -8,12 +8,14 @@
 
 
 /* colors */
+
 .colorwhite{
     color: white;
 
 }
 
 /* utilities */
+
 .cursorpointer{
     cursor: pointer;
 }
@@ -67,9 +69,32 @@ a{
 .logosize30{
     height: 30px;
     width: 30px;
-
+    
 }
 
+/* hover effects */
+
+li:hover{
+   color: white;
+}
+.fa-square-plus:hover{
+    color: white;
+}
+.align-center > p:hover{
+    color: white;
+}
+
+h4 + p:hover{
+    text-decoration: underline;
+}
+
+.icon-actualbrano > i:hover{
+    color: white;
+}
+
+#play:hover{
+    scale: 120%;
+}
 /* container */
 
 .core{
@@ -146,6 +171,7 @@ a{
 
 .topnav-left > div > p,i{
     display: none;
+    
 }
 
 .topnav-left > h3{
@@ -154,10 +180,20 @@ a{
 
 .align-center > p{
     display: none;
+
 }
 
 .bottomnav-left > hr{
     display: none;
+}
+
+.align-center > img:hover{
+    border-left: 2px solid rgb(173,255,47);
+
+}
+
+.align-center > img{
+    padding-left: 3px;
 }
 /* header */
 
@@ -185,6 +221,12 @@ header > button{
     border-color: white;
     border: 2px solid;
 }
+
+button:hover{
+    scale: 110%;
+}
+
+
 /* main */
 
 main{
@@ -207,10 +249,25 @@ main{
     margin-bottom: 20px;
     display: inline-block;
     font-size: 13px;
-    
 }
 
+a{
+    padding-bottom: 4px;
+}
+a:hover {
+    color: white;
+    position: relative;
+}
 
+a:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom:2px solid rgb(173,255,47);
+}
 /* immagini e righe */
 
 /* row-recently */
@@ -336,18 +393,23 @@ footer{
 }
 .icon-actualbrano{
     flex-direction: column;
-    
 }
 
 .icon-actualbrano > .fa-regular {
     color: rgb(111,113,119);
 }
 
+.fa-heart:before {
+    margin-right: 13px;
+}
+
+
 /* riproduzione */
 
 #play{
     font-size: 30px;
 }
+
 .playicons{
     display: flex;
     gap: 24px;
@@ -378,6 +440,13 @@ footer{
     display: inline-block;
     border-radius: 10px 10px;
 }
+.ongoing-musicbar{
+    height: 4px;
+    width: 30px;
+    background-color:white; 
+    border-radius: 10px 10px;
+}
+
 
 /* media settings */
 
@@ -389,10 +458,17 @@ footer{
     border-radius: 10px 10px;
 }
 
-
 .media-settings > i{
     color: white;
 }
+
+.ongoing-sidebar{
+    height: 4px;
+    width: 20px;
+    background-color:white; 
+    border-radius: 10px 10px;
+}
+
 /* responsive- mobile first */
 
 
@@ -571,6 +647,12 @@ li{
 /* footer */
     .musicbar{
         width: 450px;
+    }
+    .ongoing-musicbar{
+        height: 4px;
+        width: 80px;
+        background-color:white; 
+        border-radius: 10px 10px;
     }
 }
         
