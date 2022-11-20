@@ -161,8 +161,9 @@ h4 + p:hover{
 #profileimg{
    border-radius: 50%;
    background-color: grey;
-   height: 85%;
+   height: 95%;
    width: 24px;
+
 }
 
 #logoimg{
@@ -268,6 +269,7 @@ a:before{
     left: 25%;
     border-bottom:2px solid rgb(173,255,47);
 }
+
 /* immagini e righe */
 
 /* row-recently */
@@ -422,6 +424,7 @@ footer{
 
 .playbar{
     align-items: center;
+    justify-content: center;
 }
 
 .playbar > p{
@@ -436,39 +439,91 @@ footer{
     margin-right: 10px;
     background-color: rgb(111,113,119);
     height: 4px;
-    width: 120px;
+    min-width: 270%;
     display: inline-block;
     border-radius: 10px 10px;
+    position: relative;
 }
+
 .ongoing-musicbar{
     height: 4px;
-    width: 30px;
+    width: 20%;
     background-color:white; 
     border-radius: 10px 10px;
+    
+}
+
+.ongoing-green-musicbar{
+    height: 4px;
+    width: 20%;
+    background-color:rgb(173,255,47);
+    border-radius: 10px 10px;
+    display: none;
+    position: absolute;
+}
+
+.musicbar:hover .ongoing-green-musicbar{
+    display: inline-block;
+}
+
+.musicbar:hover .ongoing-musicbar{
+    display: none;
 }
 
 
 /* media settings */
 
-.music-sidebar{
-    background-color: rgb(111,113,119);
-    height: 4px;
-    width: 60px;
-    display: inline-block;
-    border-radius: 10px 10px;
-}
-
 .media-settings > i{
     color: white;
 }
 
+.music-sidebar{
+    background-color: rgb(111,113,119);
+    height: 4px;
+    width: 40%;
+    display: inline-block;
+    border-radius: 10px 10px;
+    position: relative;
+}
+
 .ongoing-sidebar{
     height: 4px;
-    width: 20px;
+    width: 20%;
     background-color:white; 
     border-radius: 10px 10px;
 }
 
+.ongoing-sidebar-green{
+    height: 4px;
+    width: 20%;
+    background-color:rgb(173,255,47);
+    border-radius: 10px 10px;
+    display: none;
+    position: absolute;
+}
+
+.music-sidebar:hover .ongoing-sidebar-green{
+    display: inline-block;
+}
+.music-sidebar:hover .ongoing-sidebar{
+    display: none;
+}
+
+.side-roundpointer{
+    height: 15px;
+    width: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+    position: absolute;
+    left: 17%;
+    bottom: -6px;
+}
+
+.music-sidebar:hover .side-roundpointer{
+    display: block;
+}
 /* responsive- mobile first */
 
 
@@ -646,14 +701,17 @@ li{
     
 /* footer */
     .musicbar{
-        width: 450px;
+        min-width: 677%;
     }
     .ongoing-musicbar{
-        height: 4px;
-        width: 80px;
-        background-color:white; 
-        border-radius: 10px 10px;
+        width: 20%;
+       
     }
+    .ongoing-green-musicbar{
+        width: 20%;
+    }
+
+    
 }
         
 /* width1200 */
