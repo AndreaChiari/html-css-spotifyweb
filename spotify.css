@@ -294,11 +294,9 @@ figure{
     position: relative;
 }
 
-.mainimg:hover{
-    position: relative;
+figure:hover .mainimg{
     opacity: 0.5;
 }
-
 
 .hoverplay:hover .mainimg{
     position: relative;
@@ -315,6 +313,7 @@ figure{
 
 figure:hover .hoverplay{
    display: inline-block;
+   opacity: 0.5;
 }
 
 
@@ -378,6 +377,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+    justify-content: space-between;
 }
 
 .actualbrano{
@@ -467,7 +467,7 @@ footer{
     margin-right: 10px;
     background-color: rgb(111,113,119);
     height: 4px;
-    min-width: 270%;
+    min-width: 235px;
     display: inline-block;
     border-radius: 10px 10px;
     position: relative;
@@ -505,7 +505,7 @@ footer{
     background-color: white;
     display: none;
     position: absolute;
-    left: 17%;
+    left: 19%;
     bottom: -6px;
 }
 
@@ -743,7 +743,7 @@ li{
     
 /* footer */
     .musicbar{
-        min-width: 677%;
+        min-width: 443px;
     }
     .ongoing-musicbar{
         width: 20%;
