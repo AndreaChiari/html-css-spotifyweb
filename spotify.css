@@ -209,6 +209,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding-right: 10px;
+    opacity: 0.5;
 }
 
 header > button{
