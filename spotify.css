@@ -62,6 +62,10 @@ a{
     display: flex;
 }
 
+.d-none{
+    display: none;
+}
+
 .align-center{
     align-items: center;
 }
@@ -196,6 +200,10 @@ h4 + p:hover{
 .align-center > img{
     padding-left: 3px;
 }
+
+.overflow-sidebar{
+    overflow-y: auto;
+}
 /* header */
 
 header{
@@ -208,7 +216,7 @@ header{
     z-index: 1;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 34px;
     opacity: 0.5;
 }
 
@@ -286,7 +294,7 @@ a:before{
     text-align: center;
 }
 .row-recently > div > figure > img{
-    height: 100%;
+    height: auto;
     max-width: 100%;
 }
 
@@ -381,19 +389,21 @@ footer{
 }
 
 .actualbrano{
-    width: calc(100% / 3);
+    flex: 0 0 230px;
     align-items: center;
     margin: 0px 4px;
 }
+
 .riproduzione{
-    width: calc(100% / 3);
+    flex-basis: 50%;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0px 47px;
+    margin: 0px 50px;
 }
+
 .media-settings{
-    width: calc(100% / 3);
+    flex: 0 0 230px;
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
@@ -412,15 +422,18 @@ footer{
 .actualbrano > div{
     align-items: center;
 }
+
 .actualbrano > div > div h4{
     color: white;
     font-size: 10px;
 }
+
 .actualbrano > div > div p{
     font-size: 10px;
     white-space: normal;
     font-weight: 700;
 }
+
 .icon-actualbrano{
     flex-direction: column;
 }
@@ -451,8 +464,9 @@ footer{
 }
 
 .playbar{
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .playbar > p{
@@ -471,6 +485,7 @@ footer{
     display: inline-block;
     border-radius: 10px 10px;
     position: relative;
+    flex-grow: 1;
 }
 
 .ongoing-musicbar{
@@ -575,9 +590,14 @@ footer{
 
 /* utilities */
 
+.d-sm-flex{
+    display: flex;
+}
+
 .marginright10{
     margin-right: 10px;
 }
+
 
 
 .paddingleft20{
@@ -696,7 +716,7 @@ li{
 }
 
 .playicons > i {
-    font-size: 25px;
+    font-size: calc(12px + 1vw);
 }
 #play {
     font-size: 40px;
